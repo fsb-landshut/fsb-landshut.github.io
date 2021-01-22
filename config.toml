@@ -1,4 +1,4 @@
 baseURL = "https://fsb-landshut.github.io"
 languageCode = "de-de"
-theme = "alp"
-title = "ALP"
+theme = "fsb-landshut"
+title = "fsb-landshut"
