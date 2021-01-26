@@ -12,6 +12,17 @@ content = ""
 farbe = ""
 icon = ""
 link = ""
+[LEISTUNGEN]
+backgroundpicture = ""
+einleitung = ""
+leistungen-links = ""
+leistungen_rechts = ""
+logo_center = ""
+titelzeile = ""
+[Referenzen]
+bildergalerie = []
+einleitungstext = ""
+titel = ""
 [anwendungsgebiete]
 elemente = []
 titel = ""
@@ -29,6 +40,9 @@ link = ""
 [einleitung]
 content = ""
 team_einzeln = []
+[header]
+backgroundpicture = "/uploads/2021/01/26/berisha_head.jpg"
+headline = "PROFESSIONELLE GEBÄUDEREINIGUNG & RENOVIERUNG LANDSHUT"
 [kurse]
 kurs-iframe = ""
 titel = ""
