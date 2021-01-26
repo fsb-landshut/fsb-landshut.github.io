@@ -13,12 +13,12 @@ farbe = ""
 icon = ""
 link = ""
 [LEISTUNGEN]
-backgroundpicture = ""
-einleitung = ""
-leistungen-links = ""
-leistungen_rechts = ""
-logo_center = ""
-titelzeile = ""
+backgroundpicture = "/uploads/2021/01/26/background_leistungen.jpg"
+einleitung = "<p>Seit mehreren Jahren betreibe ich professionelle Gebäudereinigung für private und gewerbliche Immobilien und Hausmeisterservice im Grossraum Landshut.</p><p forestry-class=\"p1\">Schnelle, zuverlässige und saubere Arbeit steht bei mir an erster Stelle - bei mir ist Ihre Immobilie in guten Händen.</p>"
+leistungen-links = "<ul><li><p>Fassadenreinigung</p></li><li><p forestry-class=\"p1\">Industriereinigung</p></li><li><p forestry-class=\"p1\">Fensterreinigung</p></li></ul>"
+leistungen_rechts = "<ul><li><p>Büroreinigung</p></li><li><p forestry-class=\"p1\">Solaranlagen-Reinigung</p></li><li><p forestry-class=\"p1\">Renovierung</p></li></ul>"
+logo_center = "/uploads/2021/01/26/fsb_logo_tuerkis-1.png"
+titelzeile = "LEISTUNGEN"
 [Referenzen]
 bildergalerie = []
 einleitungstext = ""
