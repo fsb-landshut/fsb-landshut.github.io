@@ -1,5 +1,5 @@
 +++
-seo_description = ""
+seo_description = "Impressum FSB Facility Service Berisha UG (haftungsbeschränkt)"
 titel_header = "Impressum"
 title = "Impressum"
 type = "page"
