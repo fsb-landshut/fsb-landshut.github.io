@@ -12,58 +12,7 @@ fields:
   config: {}
   template: seo
   label: SEO
-- name: einleitung
-  type: field_group
-  config: {}
-  fields:
-  - name: team_einzeln
-    type: field_group_list
-    fields:
-    - name: name
-      type: text
-      config:
-        required: false
-      label: Name
-    - name: position
-      type: text
-      config:
-        required: false
-      label: Position
-    - name: teambild
-      type: file
-      config:
-        maxSize: 64
-      label: Teambild
-    - name: kachelruckseite
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: markdown
-      label: Kachelrückseite
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: team-einzeln
-  - name: content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Content
-  label: Einleitung
-- name: cobot
+- name: header
   type: field_group
   config: {}
   fields:
@@ -72,61 +21,13 @@ fields:
     config:
       required: false
     label: headline
-  - name: headline2
-    type: text
-    config:
-      required: false
-    label: headline2
-  - name: text
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Text
   - name: backgroundpicture
     type: file
     config:
       maxSize: 64
     label: Backgroundpicture
-  - name: vordergrund_bild
-    type: file
-    config:
-      maxSize: 64
-    label: Vordergrund_bild
-  - name: button
-    type: field_group
-    config: {}
-    fields:
-    - name: icon
-      type: file
-      config:
-        maxSize: 64
-      label: icon
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    - name: link
-      type: text
-      config:
-        required: false
-      label: link
-    - name: content
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-      label: Content
-    label: button
-  label: Was ist ein Cobot
-- name: vorteile
+  label: Header
+- name: LEISTUNGEN
   type: field_group
   config: {}
   fields:
@@ -135,110 +36,54 @@ fields:
     config:
       required: false
     label: Titelzeile
+  - name: einleitung
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: einleitung
   - name: backgroundpicture
     type: file
     config:
       maxSize: 64
     label: Backgroundpicture
-  - name: kacheln
-    type: field_group_list
-    fields:
-    - name: icon
-      type: file
-      config:
-        maxSize: 64
-      label: Icon
-    - name: text_vorderseite
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: markdown
-      label: Text-Vorderseite
-    - name: text_ruckseite
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: markdown
-      label: Text Rückseite
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Kacheln
-  label: Vorteile
-- name: anwendungsgebiete
-  type: field_group
-  config: {}
-  fields:
-  - name: titel
-    type: text
+  - name: leistungen-links
+    type: textarea
+    default: ''
     config:
       required: false
-    label: Titel
-  - name: elemente
-    type: field_group_list
-    fields:
-    - name: titel
-      type: text
-      config:
-        required: false
-      label: Titel
-    - name: content
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-      label: Content
-    - name: video
-      type: file
-      config:
-        maxSize: 64
-      label: Video
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    - name: link
-      type: text
-      config:
-        required: false
-      label: link
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Elemente
-  label: Anwendungsgebiete
-- name: Kurzanalyse
-  type: field_group
-  config: {}
-  fields:
-  - name: titel
-    type: text
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: leistungen-links
+  - name: leistungen_rechts
+    type: textarea
+    default: ''
     config:
       required: false
-    label: Titel
-  - name: bild
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: leistungen_rechts
+  - name: logo_center
     type: file
     config:
       maxSize: 64
-    label: Bild
-  - name: content
+    label: logo_center
+  label: LEISTUNGEN
+- name: Referenzen
+  type: field_group
+  config: {}
+  fields:
+  - name: titel
+    type: text
+    config:
+      required: false
+    label: Titel
+  - name: einleitungstext
     type: textarea
     default: ''
     config:
@@ -246,160 +91,11 @@ fields:
       wysiwyg: true
       schema:
         format: html-blocks
-    label: Content
-  - name: button
-    type: field_group
+    label: Einleitungstext
+  - name: bildergalerie
+    type: image_gallery
     config: {}
-    fields:
-    - name: icon
-      type: file
-      config:
-        maxSize: 64
-      label: icon
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    - name: link
-      type: text
-      config:
-        required: false
-      label: link
-    - name: content
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-        schema:
-          format: markdown
-      label: Content
-    label: button
-  label: Kurzanalyse
-- name: leistungen
-  type: field_group
-  config: {}
-  fields:
-  - name: titel
-    type: text
-    config:
-      required: false
-    label: Titel
-  - name: elemente
-    type: field_group_list
-    fields:
-    - name: titel_gross
-      type: text
-      config:
-        required: false
-      label: Titel gross
-      description: Zahlen
-    - name: titel_hochkant
-      type: text
-      config:
-        required: false
-      label: Titel hochkant
-    - name: content_mitte
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-      label: Content mitte
-    - name: content_unten
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-      label: Content unten
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: farbe
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Elemente
-  label: Leistungen
-- name: pfeil
-  type: file
-  config:
-    maxSize: 64
-  label: pfeil
-- name: kurse
-  type: field_group
-  config: {}
-  fields:
-  - name: titel
-    type: text
-    config:
-      required: false
-    label: Titel
-  - name: kurs-iframe
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: kurs-iframe
-  label: Kurse
-- name: videos
-  type: field_group
-  config: {}
-  fields:
-  - name: titel
-    type: text
-    config:
-      required: false
-    label: Titel
-  - name: elemente
-    type: field_group_list
-    fields:
-    - name: titel
-      type: text
-      config:
-        required: false
-      label: Titel
-    - name: icon
-      type: file
-      config:
-        maxSize: 64
-      label: Icon
-    - name: hintergrundbild
-      type: file
-      config:
-        maxSize: 64
-      label: Hintergrundbild
-    - name: video
-      type: file
-      config:
-        maxSize: 64
-      label: Video
-    - name: link
-      type: text
-      config:
-        required: false
-      label: link
-    - name: farbe
-      type: include
-      config: {}
-      template: farbe
-      label: Farbe
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Elemente
-  label: Videos
+    label: bildergalerie
+  label: Referenzen
 pages:
 - content/_index.md
