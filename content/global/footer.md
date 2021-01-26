@@ -1,6 +1,6 @@
 +++
 date = "2018-05-25T14:23:18.000+00:00"
-hintergrundbild = "/uploads/2020/05/11/footer-bild"
+hintergrundbild = "/uploads/2021/01/26/background_kontakt.jpg"
 kontakt = "FSB Facility Service Berisha UG (haftungsbeschränkt)  \nHeimgartenstraße 12  \n84030 Ergolding"
 kontakt_links = "FSB Facility Service Berisha UG (haftungsbeschränkt)  \nGeschäftsführer: Shefqet Berisha  \nHeimgartenstraße 12  \n84030 Ergolding"
 kontakt_rechts = "<p>Tel 0871 - 97 46 44 20<br>Mobil 0151 - 152 87 072<br>info@fsb-facility-service.de<br>www.fsb-facility-service.de</p>"
