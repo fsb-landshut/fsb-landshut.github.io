@@ -1,11 +1,15 @@
-{{ define "main" }} {{$p:=.}}
+{{ define "main" }}
+{{ $t := .Site.GetPage "header.md" }} 
 <div id="home">
-  <div class="titlewrap">
-    <div class="ui container">
-      <h1>{{.Params.title}}</h1>
+  <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_auto" )}}) center center no-repeat; background-size:cover">
+    <a class="logo" href="/">
+      <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,f_auto,w_100" )}} "/>
+    </a>
+    <div class="titlewrap">
+      <div class="ui container">
+        <h1>{{.Params.title}}</h1>
+      </div>
     </div>
   </div>
 </div>
 {{ end }}
-
-

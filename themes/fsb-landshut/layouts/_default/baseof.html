@@ -10,9 +10,6 @@
       {{with .Params.titel}} 
         | {{ . | plainify }}
       {{end}}
-      {{with .Params.header}} 
-        | {{ . | plainify }}
-      {{end}}
       {{with .Params.title}} 
         | {{ . | plainify }}
       {{end}}
@@ -33,7 +30,6 @@
 </head>
 
 <body>
-  {{ partial "header.html" . }}
   <main role="main">
     {{ block "main" . }}{{ end }}
   </main>
