@@ -50,7 +50,7 @@ fields:
     config:
       maxSize: 64
     label: Backgroundpicture
-  - name: leistungen-links
+  - name: leistungen_links
     type: textarea
     default: ''
     config:

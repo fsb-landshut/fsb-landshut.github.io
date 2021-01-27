@@ -1,4 +1,24 @@
 {{ $t := .Site.GetPage "footer.md" }}
 <footer>
-  FOOTER
+  <div id="kontakt" style="background:url({{partial "imgUrl" (dict "img" $t.Params.hintergrundbild "params" "q_80" )}}) center center no-repeat; background-size:cover">
+    <div class="ui container">
+      <h2>{{$t.Params.uberschrift}}</h2>
+      <div class="ui three column grid">
+        <div class="column imgcol">
+          <img src="{{partial "imgUrl" (dict "img" $t.Params.logo_footer "params" "c_scale,q_100" )}} "/>
+        </div>
+        <div class="column">
+          {{$t.Params.kontakt_links}}
+        </div>
+        <div class="column">
+          {{$t.Params.kontakt_rechts | safeHTML}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footermenu">
+    <div class="ui container">
+      menü
+    </div>
+  </div>
 </footer>

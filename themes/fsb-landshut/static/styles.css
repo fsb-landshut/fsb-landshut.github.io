@@ -1,19 +1,19 @@
 body {
-  font-family: 'Avenir LT W01 35 Light', sans-serif;
+  font-family: 'Franklin Gothic Book W06 Rg', sans-serif;
   color: #1e1e1e;
   background: #f8f8f8 !important;
-  font-size: 14px;
+  font-size: 15px;
 }
 body *:not(i) {
-  font-family: 'Avenir LT W01 35 Light', sans-serif;
+  font-family: 'Franklin Gothic Book W06 Rg', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Avenir LT W01 35 Light', sans-serif;
+  font-family: 'CopperplateGothicW01-Ro', sans-serif !important;
   font-weight: normal;
-  color: #5f6165;
+  color: #16566f;
 }
 h1 em,
 h2 em,
@@ -27,7 +27,7 @@ h3 {
   color: #16566f;
 }
 h2 {
-  color: #027bba;
+  color: #16566f;
 }
 ul {
   padding: 0;
@@ -72,9 +72,116 @@ blockquote {
   }
 }
 a {
-  color: #027bba;
+  color: #16566f;
 }
 a:hover {
   text-decoration: underline;
-  color: #027bba;
+  color: #16566f;
+}
+#home #start {
+  min-height: 80vh;
+}
+#home #start h1,
+#home #start h2 {
+  color: white;
+}
+#home #start h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+#home #start h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+#home #start .ui.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#home #start .ui.container .logo {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+}
+#home #leistungen {
+  padding: 3rem 0;
+  color: #16566f;
+}
+#home #leistungen h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#home #leistungen .intro {
+  text-align: center;
+}
+#home #leistungen .blocks {
+  display: flex;
+  justify-content: center;
+}
+#home #leistungen .blocks > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home #leistungen .blocks img {
+  max-width: 90%;
+}
+#home #leistungen .blocks .txt {
+  padding: 0 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#home #leistungen .blocks .txt li {
+  margin: 0 0 1rem 1em;
+}
+#home #referenzen {
+  background: #16566f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem 0;
+}
+#home #referenzen .imgw {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+#home #referenzen .imgg {
+  height: 18vw;
+  width: 24vw;
+  margin: 1rem;
+}
+#home #referenzen h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+#kontakt {
+  padding: 3rem 0;
+  color: #16566f;
+}
+#kontakt h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#kontakt .imgcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#kontakt .imgcol img {
+  max-width: 200px;
+  margin-bottom: -5rem;
+}
+#footermenu {
+  background: #16566f;
+  color: white;
+  padding: 2rem 0;
 }

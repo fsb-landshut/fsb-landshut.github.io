@@ -1,13 +1,38 @@
 {{ define "main" }}
 {{ $t := .Site.GetPage "header.md" }} 
 <div id="home">
-  <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_auto" )}}) center center no-repeat; background-size:cover">
-    <a class="logo" href="/">
-      <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,f_auto,w_100" )}} "/>
-    </a>
-    <div class="titlewrap">
-      <div class="ui container">
-        <h1>{{.Params.title}}</h1>
+  <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_80" )}}) center center no-repeat; background-size:cover">
+    <div class="ui container">
+      <a class="logo" href="/">
+        <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,q_100,w_120" )}} "/>
+      </a>
+      <div class="titlewrap">
+        <div class="ui container">
+          <h1>{{.Params.title}}</h1>
+          <h2>{{.Params.header.headline}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="leistungen" style="background:url({{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.backgroundpicture "params" "q_80" )}}) center center no-repeat; background-size:cover">
+    <div class="ui container">
+      <h2>{{.Params.LEISTUNGEN.titelzeile}}</h2>
+      <div class="intro">{{.Params.LEISTUNGEN.einleitung | safeHTML}}</div>
+      <div class="blocks">
+        <div class="txt">{{.Params.LEISTUNGEN.leistungen_links | safeHTML}}</div>
+        <div><img src="{{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.logo_center "params" "c_scale,q_100,w_270" )}} "/></div>
+        <div class="txt">{{.Params.LEISTUNGEN.leistungen_rechts | safeHTML}}</div>
+      </div>
+    </div>
+  </div>
+  <div id="referenzen">
+    <div class="ui container">
+      <h2>{{.Params.Referenzen.titel}}</h2>
+      <div>{{.Params.Referenzen.einleitungstext | safeHTML}}</div>
+      <div class="imgw">
+        {{range .Params.Referenzen.bildergalerie}}
+        <div class="imgg" style="background:url({{partial "imgUrl" (dict "img" . "params" "q_100,w_400" )}}) center center no-repeat; background-size:cover"></div>
+        {{end}}
       </div>
     </div>
   </div>
