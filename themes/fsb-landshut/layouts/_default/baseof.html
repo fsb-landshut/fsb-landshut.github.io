@@ -47,42 +47,7 @@
         }
 
       });
-      $('.morebutton.detail').click(function () {
-        var target=$(this).attr('data-target');
-        if ($('#'+target).hasClass('small')){
-          $('#'+target).addClass('big');
-          $('#'+target).removeClass('small');
-          $(this).find('.txt').text('schliessen');
-        } else{
-          $('#'+target).addClass('small');
-          $('#'+target).removeClass('big');
-          $(this).find('.txt').text('öffnen');
-        }
-        if ($('#headermenu').hasClass('mobvis')) {
-          $('#headermenu').removeClass('mobvis');
-        } else {
-          $('#headermenu').addClass('mobvis');
-        }
-      });
-      $('.st').click(function () {
-        if ($(this).hasClass('min')){
-          $(this).removeClass('min');
-        }else{
-          $(this).addClass('min');
-        }
-      });
-      $('.ah').click(function () {
-        if ($(this).hasClass('closed')){
-          $(this).removeClass('closed');
-        }else{
-          $(this).addClass('closed');
-        }
-      });
     });
-  </script>
-  <script type="text/javascript">
-    var cl = cloudinary.Cloudinary.new({ cloud_name: "b-coding" });
-    cl.responsive();
   </script>
 </body>
 

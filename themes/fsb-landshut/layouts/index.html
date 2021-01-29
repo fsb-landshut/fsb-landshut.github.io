@@ -1,6 +1,32 @@
 {{ define "main" }}
 {{ $t := .Site.GetPage "header.md" }} 
 <div id="home">
+  <div class="ui container" id="mwc">
+    <div id="menuw">
+      <div id="headermenumobil" class="mobinit">
+        <div class="headermenuitem">
+          <a href="#leistungen" title="Leistungen">
+            <span>Leistungen</span>
+          </a>
+        </div>
+        <div class="headermenuitem">
+          <a href="#referenzen" title="Referenzen">
+            <span>Referenzen</span>
+          </a>
+        </div>
+        <div class="headermenuitem">
+          <a href="#kontakt" title="Kontakt">
+            <span>Kontakt</span>
+          </a>
+        </div>
+      </div>
+      <div id="mnt">
+        <button class="ui basic icon button" id="mntbt">
+          <i class="bars icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
   <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_80" )}}) center center no-repeat; background-size:cover">
     <div class="ui container">
       <a class="logo" href="/">

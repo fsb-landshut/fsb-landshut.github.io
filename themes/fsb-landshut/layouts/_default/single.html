@@ -1,11 +1,19 @@
 {{ define "main" }}
+{{ $t := .Site.GetPage "header.md" }} 
 <div class="subpage noimg">
-  <div class="titlewrap">
-    <div class="ui container">
-      <h1>{{.Title}}</h1>
-    </div>
+  <div class="blue">
+    <div class="ui container standard">
+      <a class="logo" href="/">
+        <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,q_100,w_120" )}} "/>
+      </a>
+      </div>
   </div>
   <div class="ui container standard">
+    <div class="titlewrap">
+      <div class="ui container">
+        <h1>{{.Title}}</h1>
+      </div>
+    </div>
     <div class="content ks">
       {{.Content}}
     </div>
