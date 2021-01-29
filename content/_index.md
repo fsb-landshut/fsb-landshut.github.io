@@ -1,6 +1,6 @@
 +++
 pfeil = ""
-seo_description = "fsb-landshut PROFESSIONELLE GEBÄUDEREINIGUNG & RENOVIERUNG LANDSHUT"
+seo_description = "fsb-landshut PROFESSIONELLE GEBÄUDEREINIGUNG und RENOVIERUNG LANDSHUT"
 title = "FSB Facility Service Berisha"
 type = "page"
 [LEISTUNGEN]
