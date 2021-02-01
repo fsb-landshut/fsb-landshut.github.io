@@ -17,8 +17,9 @@ Mobil 0151 - 152 87 072
 [info@fsb-facility-service.de  
 www.fsb-facility-service.de](mailto:info@fsb-facility-service.de)
 
-Geschäftsführer: Shefqet Berisha  
+Geschäftsführer: Shefqet Berisha  
 Steuer Nr. 132/126/80944  
+USt-IdNr. DE338134108  
 Amtsgericht Landshut: HRB 12372
 
 Design & Konzept:  
