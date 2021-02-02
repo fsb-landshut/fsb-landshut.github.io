@@ -1,0 +1,305 @@
+body {
+  font-family: 'Franklin Gothic Book W06 Rg', sans-serif;
+  color: #1e1e1e;
+  background: #f8f8f8 !important;
+  font-size: 15px;
+}
+body *:not(i) {
+  font-family: 'Franklin Gothic Book W06 Rg', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'CopperplateGothicW01-Ro', sans-serif !important;
+  font-weight: normal;
+  color: #16566f;
+}
+h1 em,
+h2 em,
+h3 em,
+h4 em {
+  font-style: normal;
+  color: #16566f;
+}
+h1,
+h3 {
+  color: #16566f;
+}
+h2 {
+  color: #16566f;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin: 0;
+}
+blockquote,
+q {
+  border: none;
+  font-style: italic;
+  quotes: "\201C" "\201D" "\2018" "\2019" !important;
+}
+blockquote p {
+  background: transparent;
+}
+/**/
+blockquote:before {
+  position: absolute;
+  color: #858585;
+  content: "\201C";
+  font-size: 4rem;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  top: 0;
+  left: 0;
+  margin-top: 4.5rem;
+  width: 30px;
+  z-index: 99;
+}
+blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 0.1;
+  margin-bottom: 2px;
+}
+@media (max-width: 720px) {
+  blockquote {
+    font-size: 1.5rem;
+  }
+}
+a {
+  color: #16566f;
+}
+a:hover {
+  text-decoration: underline;
+  color: #16566f;
+}
+#home #start {
+  min-height: 80vh;
+}
+#home #start h1,
+#home #start h2 {
+  color: white;
+}
+#home #start h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+#home #start h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+#home #start .ui.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#home #start .ui.container .logo {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+}
+@media (max-width: 720px) {
+  #home #start .ui.container .logo {
+    position: absolute;
+    left: 50%!important;
+    margin-left: -60px;
+    top: 3rem!important;
+  }
+}
+@media (max-width: 720px) {
+  #home #start h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #home #start h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #home #start .ui.container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #home #start .ui.container .logo {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+  }
+}
+#home #leistungen {
+  padding: 3rem 0;
+  color: #16566f;
+}
+#home #leistungen h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#home #leistungen .intro {
+  text-align: center;
+}
+#home #leistungen .blocks {
+  display: flex;
+  justify-content: center;
+}
+#home #leistungen .blocks > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home #leistungen .blocks img {
+  max-width: 90%;
+}
+#home #leistungen .blocks .txt {
+  padding: 0 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#home #leistungen .blocks .txt li {
+  margin: 0 0 1rem 1em;
+}
+#home #referenzen {
+  background: #16566f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem 0;
+}
+#home #referenzen .imgw {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+#home #referenzen .imgg {
+  height: 18vw;
+  width: 24vw;
+  margin: 1rem;
+}
+@media (max-width: 720px) {
+  #home #referenzen .imgg {
+    height: 72vw;
+    width: 96vw;
+  }
+}
+#home #referenzen h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+#kontakt {
+  padding: 3rem 0 0 0;
+  margin-bottom: -3rem;
+  color: #16566f;
+}
+#kontakt h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#kontakt .imgcol {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+#kontakt .imgcol img {
+  max-width: 200px;
+  margin-bottom: -5rem;
+}
+#footermenu {
+  z-index: 99;
+  background: #16566f;
+  color: white;
+  padding: 3rem 0;
+}
+#footermenu .container {
+  display: flex;
+  justify-content: space-between;
+}
+#footermenu a {
+  z-index: 99;
+  color: white !important;
+  margin-right: 1rem;
+}
+#footermenu a:hover {
+  text-decoration: underline;
+  color: white !important;
+}
+.content.ks {
+  padding: 2rem 0;
+}
+.subpage .titlewrap {
+  margin-top: 2rem;
+}
+.subpage .blue {
+  background: #16566f;
+  padding: 1rem 0;
+}
+#mwc {
+  position: relative;
+  z-index: 99;
+}
+#menuw {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+#menuw button {
+  box-shadow: none;
+  background: transparent!important;
+}
+#menuw button i {
+  color: white;
+  font-size: 1.5rem;
+}
+#menuw a {
+  color: white !important;
+}
+#menuw a:hover {
+  text-decoration: underline;
+  color: white !important;
+}
+#headermenumobil {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+}
+#headermenumobil.mobvis {
+  max-height: 1000px;
+  padding: 0 2rem 0rem!important;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  margin: 0 -1rem;
+}
+#headermenumobil .headermenuitem {
+  padding: 0 0.5rem;
+  color: #5f6165;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: left;
+}
