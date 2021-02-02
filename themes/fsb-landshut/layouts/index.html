@@ -27,10 +27,10 @@
       </div>
     </div>
   </div>
-  <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_80" )}}) center center no-repeat; background-size:cover">
+  <div id="start" style="background:url({{partial "imgUrl" (dict "img" .Params.header.backgroundpicture "params" "q_82" )}}) center center no-repeat; background-size:cover">
     <div class="ui container">
       <a class="logo" href="/">
-        <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,q_100,w_120" )}} "/>
+        <img src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "c_scale,q_100,w_122" )}} "/>
       </a>
       <div class="titlewrap">
         <div class="ui container">
@@ -40,13 +40,13 @@
       </div>
     </div>
   </div>
-  <div id="leistungen" style="background:url({{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.backgroundpicture "params" "q_80" )}}) center center no-repeat; background-size:cover">
+  <div id="leistungen" style="background:url({{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.backgroundpicture "params" "q_82" )}}) center center no-repeat; background-size:cover">
     <div class="ui container">
       <h2>{{.Params.LEISTUNGEN.titelzeile}}</h2>
       <div class="intro">{{.Params.LEISTUNGEN.einleitung | safeHTML}}</div>
       <div class="blocks">
         <div class="txt">{{.Params.LEISTUNGEN.leistungen_links | safeHTML}}</div>
-        <div><img src="{{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.logo_center "params" "c_scale,q_100,w_270" )}} "/></div>
+        <div><img src="{{partial "imgUrl" (dict "img" .Params.LEISTUNGEN.logo_center "params" "c_scale,q_100,w_272" )}} "/></div>
         <div class="txt">{{.Params.LEISTUNGEN.leistungen_rechts | safeHTML}}</div>
       </div>
     </div>
@@ -57,7 +57,7 @@
       <div>{{.Params.Referenzen.einleitungstext | safeHTML}}</div>
       <div class="imgw">
         {{range .Params.Referenzen.bildergalerie}}
-        <div class="imgg" style="background:url({{partial "imgUrl" (dict "img" . "params" "q_100,w_400" )}}) center center no-repeat; background-size:cover"></div>
+        <div class="imgg" style="background:url({{partial "imgUrl" (dict "img" . "params" "q_100,w_405" )}}) center center no-repeat; background-size:cover"></div>
         {{end}}
       </div>
     </div>
