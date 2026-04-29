@@ -8,7 +8,7 @@ weight = 2
 
 +++
 FSB Facility Service Berisha UG (haftungsbeschränkt)  
-Heimgartenstraße 12  
+Industriestrasse 9 
 84030 Ergolding
 
 Tel 0871 - 97 46 44 20  
